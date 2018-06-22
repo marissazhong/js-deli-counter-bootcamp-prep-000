@@ -7,6 +7,9 @@ function takeANumber(katzDeliLine, name) {
 }
 
 function nowServing(katzDeliLine) {
-  katzDeliLine.shift();
-  
+  if (katzDeliLine.length > 0) {
+    return katzDeliLine.shift();
+  } else if (katzDeliLine.length === 0) {
+    return "The line is currently empty.";
+  }
 }
