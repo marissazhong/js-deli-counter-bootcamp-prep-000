@@ -23,5 +23,5 @@ function currentLine(katzDeliLine) {
       result += (i+1) + ". " + katzDeliLine[i] + ', ';
     }
   }
-  return result.slice(0,-1);
+  return result.slice(0,-2);
 }
